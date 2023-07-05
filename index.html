@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="layout/css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+      
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <script src="layout/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+      
+    
+      
+    <title>Main Page</title>
+  </head>
+  <body>
+      <div class="top-container">
+          <div class="container">
+                <div class="container_bottom">
+                    <div class="logo"><a href="index.html"><img src="layout/image/logo-03.svg"/></a></div>
+                      <div class="menu">
+                          <ul class="main_ul">
+                            <li class="main_li"><a href="#" class="main_a">Anasayfa</a></li> 
+                            <li class="main_li"><a href="#" class="main_a">Hakkımızda</a></li> 
+                            <li class="main_li"><a href="#" class="main_a">Ekibimiz</a></li> 
+                            <li class="main_li">
+                                <a href="#" class="main_a">Çalışma Alanımız <i class="bx bx-chevron-down"></i></a>
+                                <ul class="sub_ul_ekibimiz">
+                                    <li><a href="#">Ticaret Hukuku</a></li>
+                                    <li><a href="#">Ceza Hukuku</a></li>
+                                    <li><a href="#">Miras Hukuku</a></li>
+                                    <li><a href="#">Aile Hukuku</a></li>
+                                    <li><a href="#">Vergi Hukuku</a></li>
+                                    <li><a href="#">Tüketici Hukuku</a></li>
+                                    <li><a href="#">İcra ve İflas Hukuku</a></li>
+                                    <li><a href="#">Bilişim Hukuku</a></li>
+                                </ul>
+                            </li>
+                            <li class="main_li">
+                                <a href="#" class="main_a">Yayınlar <i class="bx bx-chevron-down"></i></a>
+                                <ul class="sub_ul_yayinlar">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Hukuki Gelişmeler</a></li>
+                                </ul>
+                            </li>
+                            <li class="main_li"><a href="#" class="main_a">Kariyer</a></li>
+                            <li class="main_li"><a href="#" class="main_a">İletişim</a></li>
+                          </ul>
+                      </div>  
+                </div>
+          </div>
+      </div>
+      
+      <div class="scroll_icon">
+          <i class='bx bxs-up-arrow' ></i>
+      </div>
+      <script>
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+
+             //>=, not <=
+            if (scroll >= 50) {
+                $(".scroll_icon").addClass("scroll_ac");
+            } else {
+                $(".scroll_icon").removeClass("scroll_ac");
+            }
+
+        }); //missing );
+        
+      </script> 
+      
+      <script>
+          
+      $(".scroll_icon").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".main_slider").offset().top},
+                'slow');
+        });
+          
+      </script>
+      <div class="main_slider">
+        <div class="container-fluid">
+            <div class="slider_image">
+                <div class="owl-carousel owl-theme owl-slider">
+                    
+                    <div class="item slider_side">
+                        <div class="slider_text">
+                            <h1>Avukatlık ve Hukuki Danışmanlık Hizmeti</h1>
+                            <p>Lorem ipsum dolar sit amet</p>
+                            <a href="#">Daha Fazla Bilgi Al</a>
+                        </div>
+                    </div>
+                    <div class="item slider_side">
+                        <div class="slider_text">
+                            <h1>Avukatlık ve Hukuki Danışmanlık Hizmeti</h1>
+                            <p>Lorem ipsum dolar sit amet</p>
+                            <a href="#">Daha Fazla Bilgi Al</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="main_page">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="hakkimizda">
+                      <div class="hakkimizda_icon">
+                          <img src="layout/image/icon-hakkimizda-03.svg"/>
+                      </div>
+                      <div class="hakkimizda_text">
+                          <h1>Hakkımızda</h1>
+                          <h2>Lorem ipsum dolor sit amet consectetuer</h2>
+                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Turpis egestas sed tempus urna et pharetra pharetra. Ut tellus elementum sagittis vitae et leo duis. Non consectetur a erat nam at. A diam sollicitudin tempor id eu nisl nunc mi. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Ut tellus elementum sagittis vitae et leo duis. Non consectetur a erat nam at.</p>
+                          <a href="#">Devamını Oku <i class='bx bx-chevrons-right' ></i></a>
+                      </div>
+                      <div class="hakkimizda_img">
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="layout/image/hakkimizda.jpg"/>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="hizmetler">
+          <div class="container">
+              <div class="row">
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon1-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Ticaret Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon2-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Ceza Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon3-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Miras Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon4-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Aile Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon5-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Vergi Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon6-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Tüketici Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon7-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>İcre ve İflas Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <div class="hizmet_box">
+                        <div class="icon_box">
+                            <img src="layout/image/icon8-03.svg"/>
+                        </div>
+                        <div class="text">
+                            <h1>Bilişim Hukuku</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non  </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+              <a href="#" class="see_all">Tümünü Gör <i class='bx bx-chevrons-right' ></i></a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="ekibimiz">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="ekip_head">
+                          <div class="etiket">
+                              <img src="layout/image/icon7-03.svg"/>
+                          </div>
+                          <div class="ekip_text">
+                              <h2>Büromuz Bünyesinde Çalışan</h2>
+                              <h1>Ekibimiz</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <div class="ekip_grid">
+                          <div class="ekip_pictures">
+                              <img src="layout/image/1.jpg"/>
+                                  <div class="content">
+                                      <span>Avukat</span>
+                                      <a href="#">Emre Kiraz</a>
+                                  </div>
+                          </div>
+                          <div class="ekip_pictures">
+                              <img src="layout/image/2.jpg"/>
+                              <div class="content">
+                                  <span>Avukat</span>
+                                  <a href="#">Gaye Ulusoy</a>
+                              </div>
+                          </div>
+                          <div class="ekip_pictures">
+                              <img src="layout/image/3.jpg"/>
+                              <div class="content">
+                                  <span>Avukat</span>
+                                  <a href="#">Dilan Okur</a>
+                              </div>
+                          </div>
+                          <div class="ekip_pictures">
+                              <img src="layout/image/4.jpg"/>
+                              <div class="content">
+                                  <span>Avukat</span>
+                                  <a href="#">Tutku Onut</a>
+                              </div>
+                          </div>
+                          <div class="ekip_pictures">
+                              <img src="layout/image/5.jpg"/>
+                              <div class="content">
+                                  <span>Avukat</span>
+                                  <a href="#">Kıvanç Doğan</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="blog">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="blog_left">
+                          <div class="blog_icon">
+                              <img src="layout/image/icon-blog-03.svg"/>
+                          </div>
+                          <div class="blog_text">
+                              <h1>Blog</h1>
+                              <h2>Merak ettiklerinizi burada bulabilirsiniz.</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                          <div class="blog_button">
+                              <a href="#">Tümünü Gör</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-8">
+                      <div class="blog_right">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="blog_container">
+                                      <div class="blog_images">
+                                          <img src="layout/image/blog1.jpg"/>
+                                          <div class="blog_date">
+                                              <p>Eki 19, 2022</p>
+                                          </div>
+                                      </div>
+                                      <div class="blog_content">
+                                          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                                          <a href="#">Devamını Oku</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="blog_container">
+                                      <div class="blog_images">
+                                          <img src="layout/image/blog2.jpg"/>
+                                          <div class="blog_date">
+                                              <p>Eki 19, 2022</p>
+                                          </div>
+                                      </div>
+                                      <div class="blog_content">
+                                          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                                          <a href="#">Devamını Oku</a>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="footer_logo">
+                          <img src="layout/image/logo-footer-03.svg"/>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <div class="footer_iletisim">
+                          <ul class="first">
+                              <li>
+                                   <a href="#"><i class='bx bx-location-plus'></i> Acıbadem Mah. Gayretli Sk. Demirciler Apt. No:20 D:16 Üsküdar/İstanbul</a>
+                              </li>
+                          </ul>
+                          <ul class="second">
+                              <li>
+                                  <a href= "tel:0532 449 21 68"><i class='bx bx-phone' ></i> 0532 449 21 68</a>
+                              </li>
+                              <li>
+                                  <a href="mailto:avyesilhuseyin@gmail.com"><i class='bx bx-envelope' ></i> avyesilhuseyin@gmail.com</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <div class="social_buttons">
+                          <a href="#" id="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+                          <a href="#" id="facebook"><i class='bx bxl-facebook'></i></a>
+                          <a href="#" id="twitter"><i class='bx bxl-twitter'></i></a>
+                          <a href="#" id="youtube"><i class='bx bxl-youtube'></i></a>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <div class="footer_baslik">
+                          <p> Yeşil & Baltacıoğlu Avukatlık Ortaklığı</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
